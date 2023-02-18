@@ -12,17 +12,26 @@ enum ListViewModelState: Equatable {
     case loading
     case finishedLoading
     case error(RequestError)
+    
+    static func == (lhs: ListViewModelState, rhs: ListViewModelState) -> Bool {
+        switch (lhs, rhs) {
+        case (.finishedLoading, .finishedLoading): return true
+        case (.loading, .loading): return true
+        case (.error, .error): return true
+        default: return false
+        }
+    }
 }
 
 class SearchViewModel {
     
-    private var service = WordsSearchService()
+    private var service: WordsSearchServiceable
     @Published private(set) var words: [Word] = []
     @Published private(set) var state: ListViewModelState = .loading
     
     private var bindings = Set<AnyCancellable>()
     
-    init(service: WordsSearchService) {
+    init(service: WordsSearchServiceable) {
         self.service = service
     }
     

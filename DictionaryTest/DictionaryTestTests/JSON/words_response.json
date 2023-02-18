@@ -1,0 +1,500 @@
+[
+    {
+        "id": 2032,
+        "text": "king",
+        "meanings": [
+            {
+                "id": 25620,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "король",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/058e30721a32621136406b94de65220f.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/058e30721a32621136406b94de65220f.jpeg",
+                "transcription": "kɪŋ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king&lang=en&voice=male_2"
+            },
+            {
+                "id": 25623,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "король",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/49893af6658926a902841a29e59e5cb8.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/49893af6658926a902841a29e59e5cb8.jpeg",
+                "transcription": "kɪŋ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king&lang=en&voice=male_2"
+            },
+            {
+                "id": 25629,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "король",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/47b046a358ea82ab3067ba13d196bb76.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/47b046a358ea82ab3067ba13d196bb76.jpeg",
+                "transcription": "kɪŋ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 37569,
+        "text": "k",
+        "meanings": [
+            {
+                "id": 57099,
+                "partOfSpeechCode": "j",
+                "translation": {
+                    "text": "тысячный",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/60f6875003640f3f65ae600b3a834fe2.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/60f6875003640f3f65ae600b3a834fe2.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            },
+            {
+                "id": 57092,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "кельвин",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/0be0d1f43644369f8fb1fa13c725c59b.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/0be0d1f43644369f8fb1fa13c725c59b.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            },
+            {
+                "id": 57093,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "калий",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/fdfa3fa7a352cf650ae866df618d8d00.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/fdfa3fa7a352cf650ae866df618d8d00.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            },
+            {
+                "id": 57095,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "килобайт",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/aedc8279920935098cbbde4805614813.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/aedc8279920935098cbbde4805614813.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_1"
+            },
+            {
+                "id": 57096,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "килобайт",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/d13f19e3d7171228b6394ddde6437fa4.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/d13f19e3d7171228b6394ddde6437fa4.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            },
+            {
+                "id": 57097,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "K",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/f15af78c97cf1b64abb18e8c4bdddea3.png",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/f15af78c97cf1b64abb18e8c4bdddea3.png",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            },
+            {
+                "id": 57098,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "кетамин",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/df0aad13197eb6ea33925ec7e1aa72b7.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/df0aad13197eb6ea33925ec7e1aa72b7.jpeg",
+                "transcription": "keɪ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=k&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 3863,
+        "text": "kingdom",
+        "meanings": [
+            {
+                "id": 166540,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "царство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/ae415466b4ac1b5ad616dc4306477ad3.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/ae415466b4ac1b5ad616dc4306477ad3.jpeg",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            },
+            {
+                "id": 166542,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "королевство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/44cc4181272b9429672cac9f2811b358.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/44cc4181272b9429672cac9f2811b358.jpeg",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            },
+            {
+                "id": 166541,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "королевство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/681f03d67828e445736e9944d245f9c6.png",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/681f03d67828e445736e9944d245f9c6.png",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            },
+            {
+                "id": 166544,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "царство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/5031a80cab66adbb16954669ae37cbd8.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/5031a80cab66adbb16954669ae37cbd8.jpeg",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            },
+            {
+                "id": 166545,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "царство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/980fa389c39cb0cdd38cbcee4493c57f.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/980fa389c39cb0cdd38cbcee4493c57f.jpeg",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            },
+            {
+                "id": 166543,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "королевство",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/190d9704c8fe5b8835ac0e5e7ae0bf3d.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/190d9704c8fe5b8835ac0e5e7ae0bf3d.jpeg",
+                "transcription": "ˈkɪŋdəm",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingdom&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 17256,
+        "text": "kingpin",
+        "meanings": [
+            {
+                "id": 70303,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ось",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/09817f04878edab917b107e85cb8b488.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/09817f04878edab917b107e85cb8b488.jpeg",
+                "transcription": "ˈkɪŋpɪn",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingpin&lang=en&voice=male_2"
+            },
+            {
+                "id": 70301,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "главная фигура",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/6a6257225b711c338d54e29a2dbe80ae.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/6a6257225b711c338d54e29a2dbe80ae.jpeg",
+                "transcription": "ˈkɪŋpɪn",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingpin&lang=en&voice=male_2"
+            },
+            {
+                "id": 70302,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "шкворень",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/548d292db753f475b7d260b598945558.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/548d292db753f475b7d260b598945558.jpeg",
+                "transcription": "ˈkɪŋpɪn",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingpin&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 19632,
+        "text": "kingship",
+        "meanings": [
+            {
+                "id": 34029,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "царствование",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/4596189b2987c862f10c5b9052c9108f.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/4596189b2987c862f10c5b9052c9108f.jpeg",
+                "transcription": "ˈkɪŋʃɪp",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingship&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 20390,
+        "text": "king-size",
+        "meanings": [
+            {
+                "id": 173355,
+                "partOfSpeechCode": "j",
+                "translation": {
+                    "text": "огромный",
+                    "note": "о кровати"
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/027a1c3e0aeaf5c1d83f8df8b948b580.png",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/027a1c3e0aeaf5c1d83f8df8b948b580.png",
+                "transcription": "ˈkɪŋsaɪz",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king-size&lang=en&voice=female_1"
+            }
+        ]
+    },
+    {
+        "id": 21874,
+        "text": "kingfisher",
+        "meanings": [
+            {
+                "id": 164564,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "зимородок",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/b2bc511037a9b532e007e400ad1bc5aa.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/b2bc511037a9b532e007e400ad1bc5aa.jpeg",
+                "transcription": "ˈkɪŋˌfɪʃə",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfisher&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 27097,
+        "text": "king-sized",
+        "meanings": [
+            {
+                "id": 49162,
+                "partOfSpeechCode": "j",
+                "translation": {
+                    "text": "огромный",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/8a8f255ddff7019148507e8fcf96c419.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/8a8f255ddff7019148507e8fcf96c419.jpeg",
+                "transcription": "ˈkɪŋsaɪzd",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king-sized&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 107872,
+        "text": "king of beasts",
+        "meanings": [
+            {
+                "id": 144607,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "царь зверей",
+                    "note": "лев"
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/6096e61fe7a4c41421ef3f2c654af3a9.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/6096e61fe7a4c41421ef3f2c654af3a9.jpeg",
+                "transcription": "'kɪŋ ɒv 'biːsts",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king+of+beasts&lang=en&voice=male_1"
+            }
+        ]
+    },
+    {
+        "id": 27883,
+        "text": "kingly",
+        "meanings": [
+            {
+                "id": 155399,
+                "partOfSpeechCode": "j",
+                "translation": {
+                    "text": "королевский",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/637769ed20efba2e75e276bf82a2c23b.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/637769ed20efba2e75e276bf82a2c23b.jpeg",
+                "transcription": "ˈkɪŋli",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingly&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 28123,
+        "text": "kingmaker",
+        "meanings": [
+            {
+                "id": 158588,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "влиятельное лицо, определяющее выбор кандидатов на политические должности",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/c2fdf899e28ad8e6c9b79309243cbbda.jpg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/c2fdf899e28ad8e6c9b79309243cbbda.jpg",
+                "transcription": "ˈkɪŋˌmeɪkə",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingmaker&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 29685,
+        "text": "kingfish",
+        "meanings": [
+            {
+                "id": 76878,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ментициррус",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/137dfef387bfdc0353751874e82c3e6f.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/137dfef387bfdc0353751874e82c3e6f.jpeg",
+                "transcription": "",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfish&lang=en&voice=male_2"
+            },
+            {
+                "id": 76877,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ментициррус",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/137dfef387bfdc0353751874e82c3e6f.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/137dfef387bfdc0353751874e82c3e6f.jpeg",
+                "transcription": "",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfish&lang=en&voice=male_2"
+            },
+            {
+                "id": 76876,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ментициррус",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/0a5fbf15c93e080317e6cf08a335603a.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/0a5fbf15c93e080317e6cf08a335603a.jpeg",
+                "transcription": "",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfish&lang=en&voice=male_2"
+            },
+            {
+                "id": 76875,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ментициррус",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/9a0da3d272afc66668fd510b9cf8c860.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/9a0da3d272afc66668fd510b9cf8c860.jpeg",
+                "transcription": "ˈkɪŋfɪʃ",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfish&lang=en&voice=female_2"
+            },
+            {
+                "id": 76874,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "ментициррус",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/c45e76497d27e061bc576d96d599259e.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/c45e76497d27e061bc576d96d599259e.jpeg",
+                "transcription": "",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingfish&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 57621,
+        "text": "kingbird",
+        "meanings": [
+            {
+                "id": 140343,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "тиран",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/0532627db0cc8e6357429500ac047fac.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/0532627db0cc8e6357429500ac047fac.jpeg",
+                "transcription": "ˌkɪŋ'bɜːd",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingbird&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 65125,
+        "text": "kingsnake",
+        "meanings": [
+            {
+                "id": 106583,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "королевские змеи",
+                    "note": null
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/3db15c6f86a9e0914950b85f5ab54be3.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/3db15c6f86a9e0914950b85f5ab54be3.jpeg",
+                "transcription": "",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=kingsnake&lang=en&voice=male_2"
+            }
+        ]
+    },
+    {
+        "id": 83954,
+        "text": "king salmon",
+        "meanings": [
+            {
+                "id": 90532,
+                "partOfSpeechCode": "n",
+                "translation": {
+                    "text": "чавыча",
+                    "note": ""
+                },
+                "previewUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/96x72/https://cdn-user77752.skyeng.ru/images/bc5ae5bd0ec5bb0d03924f09b9dc57ce.jpeg",
+                "imageUrl": "//cdn-user77752.skyeng.ru/skyconvert/unsafe/640x480/https://cdn-user77752.skyeng.ru/images/bc5ae5bd0ec5bb0d03924f09b9dc57ce.jpeg",
+                "transcription": "kɪŋ ˈsæmən",
+                "soundUrl": "https://vimbox-tts.skyeng.ru/api/v1/tts?text=king+salmon&lang=en&voice=male_2"
+            }
+        ]
+    }
+]
