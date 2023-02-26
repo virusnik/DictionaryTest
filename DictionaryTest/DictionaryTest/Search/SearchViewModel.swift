@@ -27,7 +27,8 @@ class SearchViewModel {
     
     private var service: WordsSearchServiceable
     @Published private(set) var words: [Word] = []
-    @Published private(set) var state: ListViewModelState = .loading
+    @Published private(set) var state: ListViewModelState = .finishedLoading
+    var coordinator: SearchCoordinator?
     
     private var bindings = Set<AnyCancellable>()
     
@@ -37,6 +38,7 @@ class SearchViewModel {
     
     func getWord(searchText: String) {
         if !searchText.isEmpty && searchText.first != " " && searchText.last != " " && searchText.count > 1 {
+            self.state = .loading
             Task(priority: .userInitiated) {
                 let result = await service.getWordMeanings(searchText: searchText)
                 switch result {
@@ -51,19 +53,18 @@ class SearchViewModel {
     }
     
     func getSectionsCount() -> Int {
-        let count = words.count
-        if count > 0 {
-            return count
-        }
-        return 0
+        return words.count
     }
     
     func getRowsCount(section: Int) -> Int {
-        let count = words[section].meanings.count
-        if count > 0 {
-            return count
+        return words[section].meanings.count
+    }
+    
+    func didSelectRow(at indexPath: IndexPath) {
+        let meaning = words[indexPath.section].meanings[indexPath.row]
+        if let coordinator = coordinator {
+            coordinator.onSelect(String(meaning.id))
         }
-        return 0
     }
     
 }

@@ -9,6 +9,7 @@ import Foundation
 
 enum WordsSearchEndpont {
     case wordsSearch(searchText: String)
+    case meanings(id: String)
 }
 
 extension WordsSearchEndpont: Endpoint {
@@ -16,6 +17,8 @@ extension WordsSearchEndpont: Endpoint {
         switch self {
         case .wordsSearch(let text):
             return [URLQueryItem(name: "search", value: text)]
+        case .meanings(id: let id):
+            return [URLQueryItem(name: "ids", value: id)]
         }
     }
     
@@ -23,19 +26,21 @@ extension WordsSearchEndpont: Endpoint {
         switch self {
         case .wordsSearch:
             return "/api/public/v1/words/search"
+        case .meanings:
+            return "/api/public/v1/meanings"
         }
     }
     
     var method: RequestMethod {
         switch self {
-        case .wordsSearch:
+        case .wordsSearch, .meanings:
             return .get
         }
     }
     
     var header: [String: String]? {
         switch self {
-        case .wordsSearch:
+        case .wordsSearch, .meanings:
             return [
                 "Content-Type": "application/json;charset=utf-8"
             ]
@@ -44,7 +49,7 @@ extension WordsSearchEndpont: Endpoint {
     
     var body: [String: String]? {
         switch self {
-        case .wordsSearch:
+        case .wordsSearch, .meanings:
             return nil
         }
     }

@@ -8,7 +8,7 @@
 import UIKit.UIImage
 
 extension UIImage {
-
+    
     func decodedImage() -> UIImage {
         guard let cgImage = cgImage else { return self }
         let size = CGSize(width: cgImage.width, height: cgImage.height)
@@ -18,7 +18,7 @@ extension UIImage {
         guard let decodedImage = context?.makeImage() else { return self }
         return UIImage(cgImage: decodedImage)
     }
-
+    
     // Rough estimation of how much memory image uses in bytes
     var diskSize: Int {
         guard let cgImage = cgImage else { return 0 }

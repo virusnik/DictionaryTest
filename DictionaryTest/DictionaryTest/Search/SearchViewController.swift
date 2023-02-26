@@ -15,7 +15,6 @@ class SearchViewController: UIViewController {
     private let searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.backgroundColor = .white
         searchController.isActive = true
         return searchController
     }()
@@ -45,16 +44,15 @@ class SearchViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        
         activityIndicator.stopAnimating()
+        activityIndicator.isHidden = true
         setupNavigationController(title: "Search words")
         setupSearchController(placeholder: "Search new words")
         setupTableView()
         setupConstraints()
-        setUpBindings()
     }
     
     //MARK: Initial setup
@@ -65,18 +63,20 @@ class SearchViewController: UIViewController {
         tableView.rowHeight = rowHeight
         tableView.estimatedRowHeight = rowHeight
     }
+    
     private func setupSearchController(placeholder: String) {
         searchController.searchResultsUpdater = self
         searchController.definesPresentationContext = true
         searchController.searchBar.placeholder = placeholder
         
     }
+    
     private func setupNavigationController(title: String) {
         navigationItem.searchController = searchController
         navigationItem.title = title
-        navigationController?.navigationBar.backgroundColor = .white
         navigationController?.hidesBarsOnSwipe = false
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
     
     //MARK: Constraints
@@ -101,40 +101,40 @@ class SearchViewController: UIViewController {
         
     }
     
-    private func setUpBindings() {
-        func bindViewModelToView() {
-            viewModel.$words
-                .receive(on: RunLoop.main)
-                .sink(receiveValue: { [weak self] _ in
-                    self?.tableView.reloadData()
-                })
-                .store(in: &bindings)
-            
-            let stateValueHandler: (ListViewModelState) -> Void = { [weak self] state in
-                switch state {
-                case .loading:
-                    self?.activityIndicator.startAnimating()
-                case .finishedLoading:
-                    self?.activityIndicator.stopAnimating()
-                case .error(let error):
-                    self?.showError(error)
-                    self?.activityIndicator.stopAnimating()
-                }
+    func bindViewModelToView() {
+        viewModel.$words
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { [weak self] _ in
+                self?.tableView.reloadData()
+            })
+            .store(in: &bindings)
+        
+        let stateValueHandler: (ListViewModelState) -> Void = { [weak self] state in
+            switch state {
+            case .loading:
+                self?.activityIndicator.startAnimating()
+            case .finishedLoading:
+                self?.activityIndicator.stopAnimating()
+                self?.activityIndicator.isHidden = true
+            case .error(let error):
+                self?.showError(error)
+                self?.activityIndicator.stopAnimating()
             }
-            
-            viewModel.$state
-                .receive(on: RunLoop.main)
-                .sink(receiveValue: stateValueHandler)
-                .store(in: &bindings)
         }
-        bindViewModelToView()
+        
+        viewModel.$state
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: stateValueHandler)
+            .store(in: &bindings)
     }
     
     private func showError(_ error: Error) {
         let alertController = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+        
         let alertAction = UIAlertAction(title: "OK", style: .default) { [unowned self] _ in
             self.dismiss(animated: true, completion: nil)
         }
+        
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
     }
@@ -153,8 +153,7 @@ extension SearchViewController: UISearchResultsUpdating  {
                 viewModel!.getWord(searchText: $0.withoutPunctuations)
             }
             .store(in: &bindings)
-        activityIndicator.startAnimating()
-        
+        bindViewModelToView()
     }
 }
 
@@ -170,19 +169,15 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: MeaningCell.cellID) as? MeaningCell else { return UITableViewCell() }
-        if(indexPath.row > viewModel.words.count-1) {
-            return UITableViewCell()
-        } else {
-            let meaning = viewModel.words[indexPath.section].meanings[indexPath.row]
-            cell.configure(with: meaning)
-            return cell
-        }
+        let meaning = viewModel.words[indexPath.section].meanings[indexPath.row]
+        cell.configure(with: meaning)
+        return cell
     }
     
     //MARK: UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        TODO: add transition to details
+        viewModel.didSelectRow(at: indexPath)
     }
 }
 

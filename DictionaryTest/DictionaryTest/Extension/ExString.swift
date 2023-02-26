@@ -8,7 +8,7 @@
 import Foundation
 
 extension String {
-  var withoutPunctuations: String {
-    return self.components(separatedBy: CharacterSet.punctuationCharacters).joined(separator: "")
-  }
+    var withoutPunctuations: String {
+        return self.components(separatedBy: CharacterSet.punctuationCharacters).joined(separator: "")
+    }
 }

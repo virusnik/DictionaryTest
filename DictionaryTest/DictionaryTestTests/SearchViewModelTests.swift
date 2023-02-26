@@ -40,7 +40,7 @@ final class SearchViewModelTests: XCTestCase {
         }
     }
     
-    func testMainViewControllerFetchData() async throws {
+    func testSearchViewModelFetchData() async throws {
         let viewModel = SearchViewModel(service: WordsSearchServiceMock())
         
         let expectation = expectation(description: "Fetch data from service")

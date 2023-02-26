@@ -30,9 +30,6 @@ class MeaningCell: UITableViewCell {
     }()
     
     //MARK: Other Properties
-    
-    private var animator: UIViewPropertyAnimator?
-    var imageLoader = ImageCache()
     private var cancellable: AnyCancellable?
     
     //MARK: Constraints
@@ -75,7 +72,6 @@ class MeaningCell: UITableViewCell {
         
         previewImageView.image = nil
         previewImageView.alpha = 0.0
-        animator?.stopAnimation(true)
         cancellable?.cancel()
     }
     
@@ -85,21 +81,18 @@ class MeaningCell: UITableViewCell {
     }
     
     private func loadImage(for item: Meaning) -> AnyPublisher<UIImage?, Never> {
-            return Just(item.previewURL)
+        return Just(item.previewURL)
             .flatMap({ poster -> AnyPublisher<UIImage?, Never> in
                 let url = URL(string: "https:" + item.previewURL)!
                 return ImageLoader.shared.loadImage(from: url)
             })
             .eraseToAnyPublisher()
-        }
+    }
     
     private func showImage(image: UIImage?) {
-            previewImageView.alpha = 0.0
-            animator?.stopAnimation(false)
-            previewImageView.image = image
-            animator = UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.3, delay: 0, options: .curveLinear, animations: {
-                self.previewImageView.alpha = 1.0
-            })
-        }
+        previewImageView.alpha = 0.0
+        previewImageView.image = image
+        self.previewImageView.alpha = 1.0
+    }
     
 }

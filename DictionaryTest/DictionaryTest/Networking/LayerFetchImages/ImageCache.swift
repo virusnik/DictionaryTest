@@ -37,7 +37,7 @@ public final class ImageCache: ImageCacheType {
         cache.totalCostLimit = config.memoryLimit
         return cache
     }()
-    private let lock = NSLock()
+    private let lock = NSRecursiveLock()
     private let config: Config
 
     public struct Config {
