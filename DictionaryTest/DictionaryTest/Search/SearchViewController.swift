@@ -18,11 +18,13 @@ class SearchViewController: UIViewController {
         searchController.isActive = true
         return searchController
     }()
+    
     private let activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .medium)
         activityIndicator.hidesWhenStopped = true
         return activityIndicator
     }()
+    
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         tableView.showsVerticalScrollIndicator = false
@@ -30,7 +32,6 @@ class SearchViewController: UIViewController {
     }()
     
     //MARK: Other Properties
-    private let rowHeight = (UIScreen.main.bounds.size.height * 0.1)
     private var viewModel: SearchViewModel = SearchViewModel(service: WordsSearchService())
     private var bindings = Set<AnyCancellable>()
     
@@ -60,8 +61,7 @@ class SearchViewController: UIViewController {
         tableView.register(MeaningCell.self, forCellReuseIdentifier: MeaningCell.cellID)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = rowHeight
-        tableView.estimatedRowHeight = rowHeight
+        tableView.rowHeight = UITableView.automaticDimension
     }
     
     private func setupSearchController(placeholder: String) {

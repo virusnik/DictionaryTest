@@ -18,8 +18,8 @@ class MeaningDetailViewController: UIViewController {
     private let meaningImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage.init(systemName: "photo.fill")
-        imageView.tintColor = .systemGroupedBackground
+        imageView.image = Style.Image.placeHolderPhoto
+        imageView.tintColor = Style.Color.tintColorImage
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 20
         imageView.layer.masksToBounds = true
@@ -40,25 +40,22 @@ class MeaningDetailViewController: UIViewController {
     
     private let wordLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 22)
+        label.font = Style.Font.wordValue
         return label
     }()
     
     private let translationLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .left
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.font = Style.Font.translationValue
         label.sizeToFit()
         return label
     }()
     
     private let transcriptionLabel: UILabel = {
         let label = UILabel()
-        label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        label.font = Style.Font.translationValue
         return label
     }()
     
@@ -74,7 +71,7 @@ class MeaningDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = Style.Color.backgroundColor
         setupNavigationController()
         getData()
         setupConstraints()

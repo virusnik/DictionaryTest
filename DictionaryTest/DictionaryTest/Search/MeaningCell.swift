@@ -15,7 +15,7 @@ class MeaningCell: UITableViewCell {
     private let previewImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage.init(systemName: "photo.fill")
+        imageView.image = Style.Image.placeHolderPhoto
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 10
         imageView.layer.masksToBounds = true
@@ -23,8 +23,17 @@ class MeaningCell: UITableViewCell {
         return imageView
     }()
     
+    private lazy var labelsStack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [translationLabel])
+        stack.axis = .vertical
+        stack.alignment = .leading
+        stack.distribution = .equalSpacing
+        return stack
+    }()
+    
     let translationLabel: UILabel = {
         let label = UILabel()
+        label.numberOfLines = 0
         label.textAlignment = .left
         return label
     }()
@@ -37,7 +46,7 @@ class MeaningCell: UITableViewCell {
         
         addSubviewsForAutolayout([
             previewImageView,
-            translationLabel
+            labelsStack
         ])
         
         NSLayoutConstraint.activate([
@@ -48,9 +57,10 @@ class MeaningCell: UITableViewCell {
         ])
         
         NSLayoutConstraint.activate([
-            translationLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            translationLabel.leadingAnchor.constraint(equalTo: previewImageView.trailingAnchor,constant: 8),
-            translationLabel.trailingAnchor.constraint(equalTo: trailingAnchor,constant: -16)
+            labelsStack.topAnchor.constraint(equalTo: topAnchor,constant: 8),
+            labelsStack.leadingAnchor.constraint(equalTo: previewImageView.trailingAnchor,constant: 8),
+            labelsStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
+            labelsStack.bottomAnchor.constraint(equalTo: bottomAnchor,constant: -8),
             
         ])
     }
@@ -59,7 +69,6 @@ class MeaningCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor = .systemGroupedBackground
         setupConstraints()
     }
     

@@ -25,7 +25,7 @@ final class AppCoordinator: Coordinator {
     func start() {
         let navigationController = UINavigationController()
         
-        navigationController.view.backgroundColor = .systemBackground
+        navigationController.view.backgroundColor = Style.Color.backgroundColor
         navigationController.navigationBar.isTranslucent = true
         navigationController.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
