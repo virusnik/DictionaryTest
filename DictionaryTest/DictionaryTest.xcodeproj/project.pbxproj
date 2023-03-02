@@ -42,6 +42,9 @@
 		36E7A1D829AF4D0900106967 /* Style+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A1D729AF4D0900106967 /* Style+Font.swift */; };
 		36E7A1DA29AF4FDE00106967 /* Style+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A1D929AF4FDE00106967 /* Style+Image.swift */; };
 		36E7A1DC29AF500200106967 /* Style+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A1DB29AF500200106967 /* Style+Color.swift */; };
+		36E7A1E629B093C300106967 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A1E529B093C300106967 /* Configuration.swift */; };
+		36E7A1EE29B09F8C00106967 /* ConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7A1ED29B09F8C00106967 /* ConfigLoader.swift */; };
+		36E7A1F229B0A76400106967 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36E7A1F129B0A76400106967 /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,13 @@
 		36E7A1D729AF4D0900106967 /* Style+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Font.swift"; sourceTree = "<group>"; };
 		36E7A1D929AF4FDE00106967 /* Style+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Image.swift"; sourceTree = "<group>"; };
 		36E7A1DB29AF500200106967 /* Style+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+Color.swift"; sourceTree = "<group>"; };
+		36E7A1E029AF9EF500106967 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
+		36E7A1E129AF9F0400106967 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		36E7A1E229AFA09A00106967 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		36E7A1E329AFA0AB00106967 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		36E7A1E529B093C300106967 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		36E7A1ED29B09F8C00106967 /* ConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigLoader.swift; sourceTree = "<group>"; };
+		36E7A1F129B0A76400106967 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Config.plist; path = DictionaryTest/Generated/Config/Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,7 @@
 		36B81BFB2998FF0500ED3CEF = {
 			isa = PBXGroup;
 			children = (
+				36E7A1F129B0A76400106967 /* Config.plist */,
 				36B81C062998FF0500ED3CEF /* DictionaryTest */,
 				36B81C1D2998FF0600ED3CEF /* DictionaryTestTests */,
 				36B81C272998FF0600ED3CEF /* DictionaryTestUITests */,
@@ -151,6 +162,7 @@
 		36B81C062998FF0500ED3CEF /* DictionaryTest */ = {
 			isa = PBXGroup;
 			children = (
+				36E7A1DD29AF9E9900106967 /* Configurations */,
 				36B81C66299F751300ED3CEF /* AppDelegate */,
 				36B81C65299F74F600ED3CEF /* SupportingFiles */,
 				36B81C64299F74C500ED3CEF /* Resources */,
@@ -190,6 +202,7 @@
 				36B81C5A299E790100ED3CEF /* LayerFetchImages */,
 				36B81C3A299A37CB00ED3CEF /* Endpoint.swift */,
 				36B81C3E299A76C500ED3CEF /* HTTPClient.swift */,
+				36E7A1ED29B09F8C00106967 /* ConfigLoader.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -241,6 +254,7 @@
 			children = (
 				36B81C3C299A753400ED3CEF /* Word.swift */,
 				36E7A1CF29A8A47100106967 /* MeaningDetail.swift */,
+				36E7A1E529B093C300106967 /* Configuration.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,6 +331,33 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		36E7A1DD29AF9E9900106967 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				36E7A1DF29AF9EC700106967 /* Production */,
+				36E7A1DE29AF9EB500106967 /* Development */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		36E7A1DE29AF9EB500106967 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				36E7A1E129AF9F0400106967 /* Development.xcconfig */,
+				36E7A1E329AFA0AB00106967 /* Config.plist */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		36E7A1DF29AF9EC700106967 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				36E7A1E029AF9EF500106967 /* Production.xcconfig */,
+				36E7A1E229AFA09A00106967 /* Config.plist */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +367,7 @@
 			buildPhases = (
 				36B81C002998FF0500ED3CEF /* Sources */,
 				36B81C012998FF0500ED3CEF /* Frameworks */,
+				36E7A1E429B0910E00106967 /* ShellScript */,
 				36B81C022998FF0500ED3CEF /* Resources */,
 			);
 			buildRules = (
@@ -425,6 +467,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36E7A1F229B0A76400106967 /* Config.plist in Resources */,
 				36B81C142998FF0600ED3CEF /* LaunchScreen.storyboard in Resources */,
 				36B81C112998FF0600ED3CEF /* Assets.xcassets in Resources */,
 			);
@@ -447,6 +490,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36E7A1E429B0910E00106967 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${SRCROOT}/${PRODUCT_NAME}/Generated/Config/Config.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -fp \"${SRCROOT}/${PRODUCT_NAME}/Configurations/${XCC_CONFIG_PATH}\" \"${SRCROOT}/${PRODUCT_NAME}/Generated/Config/Config.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36B81C002998FF0500ED3CEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -454,6 +518,7 @@
 			files = (
 				36B81C43299A808A00ED3CEF /* WordsSearchEndpont.swift in Sources */,
 				36B81C0C2998FF0500ED3CEF /* SearchViewController.swift in Sources */,
+				36E7A1E629B093C300106967 /* Configuration.swift in Sources */,
 				36B81C38299A2DB700ED3CEF /* AppNavigationController.swift in Sources */,
 				36E7A1DA29AF4FDE00106967 /* Style+Image.swift in Sources */,
 				36E7A1D229A8B78800106967 /* MeaningDetailViewModel.swift in Sources */,
@@ -470,6 +535,7 @@
 				36B81C3D299A753400ED3CEF /* Word.swift in Sources */,
 				36E7A1CE29A8A18400106967 /* MeaningDetailViewController.swift in Sources */,
 				36B81C51299E772D00ED3CEF /* ExUIView.swift in Sources */,
+				36E7A1EE29B09F8C00106967 /* ConfigLoader.swift in Sources */,
 				36B81C59299E78B900ED3CEF /* ExUIImage.swift in Sources */,
 				36B81C45299A841600ED3CEF /* WordsSearchService.swift in Sources */,
 				36B81C0A2998FF0500ED3CEF /* SceneDelegate.swift in Sources */,
@@ -530,6 +596,7 @@
 /* Begin XCBuildConfiguration section */
 		36B81C2C2998FF0600ED3CEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E7A1E129AF9F0400106967 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -590,6 +657,7 @@
 		};
 		36B81C2D2998FF0600ED3CEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E7A1E029AF9EF500106967 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -651,11 +719,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DictionaryTest/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SkyEngDictionary;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,9 +734,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.DictionaryTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -678,11 +752,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DictionaryTest/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SkyEngDictionary;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,9 +767,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.DictionaryTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

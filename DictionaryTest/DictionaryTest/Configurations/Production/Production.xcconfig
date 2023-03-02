@@ -1,0 +1,12 @@
+//
+//  Production.xcconfig
+//  DictionaryTest
+//
+//  Created by Sergio Veliz on 01.03.2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = DictionaryTest
+XCC_CONFIG_PATH = Production/Config.plist

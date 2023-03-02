@@ -7,6 +7,8 @@
 
 import Foundation
 
+private let configure = ConfigLoader.parseFile()
+
 protocol Endpoint {
     var scheme: String { get }
     var host: String { get }
@@ -19,11 +21,11 @@ protocol Endpoint {
 
 extension Endpoint {
     var scheme: String {
-        return "https"
+        return configure.scheme
     }
     
     var host: String {
-        return "dictionary.skyeng.ru"
+        return configure.host
     }
 }
 
